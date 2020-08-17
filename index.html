@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张裕的小书屋</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: STKaiti;
+        }
+
+        /* body{
+            background-color: #bfa;
+        } */
+
+        .head-wrapper{
+            width: 1208px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        .head{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font: 80px STKaiti;
+            /* background-color: #bfa; */
+            margin-left: 0;
+            transition: all 2s;
+        }
+
+        .head-wrapper:hover .head{
+            margin-left: 1108px;
+        }
+
+        .items{
+            width: 1208px;
+            height: 48px;
+            line-height: 48px;
+            background-color: #E8E7E3;
+            margin: 0 auto;
+            display: flex;
+        }
+
+
+        .items ul{
+            flex-grow: 1;
+        }
+
+        .nav a{
+            display: block;
+            color: #828281;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .nav a:hover{
+            color: #fff;
+            background-color: #3F3F3F;
+        }
+
+        /* 设置科幻小说的弹出层 */
+        .items ul:nth-child(1):hover .science-fiction,
+        .items ul:nth-child(2):hover .humanities{
+            display: table;
+        }
+
+        .nav li{
+            position: relative;
+        }
+
+        .science-fiction,.humanities{
+            display: none;
+            position: absolute;
+            width: 200px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+	</style>
+ </head>
+ <body>
+     <div class="head-wrapper">
+     <div class="head">书</div>
+     </div>
+     <div class="items">
+     <ul class="nav">
+        <li><a href="https://1205680639.rthe.xyz/科幻小说.html">科幻小说</a>
+        <ul class="science-fiction">
+            <li><a href="https://1205680639.rthe.xyz/科幻小说/奇点遗民.html">奇点遗民</a></li>
+        </ul>
+        </li>
+     </ul>
+
+        <ul class="nav">
+        <li><a href="https://1205680639.rthe.xyz/人文读物.html">人文读物</a>
+        <ul class="humanities">
+            <li><a href="https://1205680639.rthe.xyz/人文读物/未来简史.html">未来简史</a></li>
+        </ul>
+        </li>
+        </ul>
+
+        <ul class="nav">
+        <li><a href="https://1205680639.rthe.xyz/技术参考.html">技术参考</a></li>
+     </ul>
+     </div>
+ </body>
+</html>
