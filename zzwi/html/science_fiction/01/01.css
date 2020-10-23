@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: STKaiti;
+}
+
+body{
+    background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1597349418378&di=fe3c39a0836b24de5b31e07dc9e12733&imgtype=0&src=http%3A%2F%2Fpic21.photophoto.cn%2F20111129%2F0020033062360763_b.jpg);
+}
+
+.head-wrapper{
+    width: 1208px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.head{
+    box-sizing:border-box;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font: 80px STKaiti;
+    /* background-color: #bfa; */
+    /* color: #D07026; */
+    color: #000;
+    margin-left: 0;
+    transition: all 8s;
+}
+
+.head-wrapper:hover .head{
+    margin-left: 1108px;
+}
+
+.items{
+    width: 1208px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #E8E7E3;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.items ul{
+    flex-grow: 1;
+}
+
+.nav a{
+    display: block;
+    color: #828281;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: #fff;
+    background-color: #3F3F3F;
+}
+
+/* 设置弹出层 */
+.items ul:nth-child(3):hover .more,
+.items ul:nth-child(2):hover .catalog{
+    display: table;
+}
+
+.nav li{
+    position: relative;
+}
+
+.more,.catalog{
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+/* 设置文章的结构 */
+.book{
+    width: 1208px;
+    text-align: center;
+    margin: 0 auto;
+    font: 30px STKaiti;
+    color: #262626;
+    background-color: #F6F1E7;
+}
+
+.article{
+    box-sizing: border-box;
+    width: 1208px;
+    margin: 30px auto;
+    padding: 30px 50px;
+    font: 24px STKaiti;
+    color: #262626;
+    background-color: #F6F1E7;
+}
+
+.name{
+    font: 40px STKaiti;
+}
+
+.px{
+    padding-top:50px;
+}
